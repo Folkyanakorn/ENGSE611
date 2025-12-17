@@ -1,53 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>สมัครสมาชิก</title>
 </head>
 <body>
-        <table align="center" cellpadding="8"> 
-            <tr>
-    <td>
-        <h1>สมัคร</h1>
-        <a1 style="color: grey;">ง่ายและรวดเร็ว</a1>
-    </td>
+
+<table align="center" width="500" cellpadding="8">
+    <!-- หัวข้อ -->
+    <tr>
+        <td colspan="2">
+            <h2>สมัคร</h2>
+            <font color="gray">ง่ายและรวดเร็ว</font>
+            <hr>
+        </td>
     </tr>
+
+    <!-- ชื่อ / นามสกุล -->
     <tr>
         <td>
-    <input type="name" placeholder="ชื่อ" size="25"> 
-    <input type="lastname" placeholder="นามสกุล" size="25">
-    </td>
+            <input type="text" placeholder="ชื่อ" size="22">
+        </td>
+        <td>
+            <input type="text" placeholder="นามสกุล" size="22">
+        </td>
     </tr>
-    <td>
-    <input type="contact" placeholder="หมายเลขโทรศัพท์มือถือหรืออีเมล" size="51">
-    </td>
+
+    <!-- เบอร์หรืออีเมล -->
     <tr>
-    <td>
-    <input type="password" placeholder="รหัสผ่านใหม่" size="51">
-     </td>
+        <td colspan="2">
+            <input type="text" placeholder="หมายเลขโทรศัพท์มือถือหรืออีเมล" size="50">
+        </td>
     </tr>
-    <td>
-    <a1>วันเกิด</a1>
-    <br>
-    <input type="date">
-    </td>
-     </tr>
+
+    <!-- รหัสผ่าน -->
     <tr>
-          <td>เพศ</td>
-          </tr>
-    <td>
-        <tr>
-    <th input type="radio">หญิง</th>
-    </td>
-    <td>
-    <th input type="radio">ชาย</th>
-    </td>
-     </tr>
-    <a1>เมื่อคลิก สมัคร แสดงว่าคุณยอมรับข้อกำหนด นโยบายข้อมูล และนโยบายคุกกี้ของเรา คุณอาจได้รับแจ้งเตือนทาง SMS จากเรา และสามารถเลือกไม่รับได้ในภายหลัง</a1>
-    <br>
-    <input type="submit" value=" สมัคร" size="20">
+        <td colspan="2">
+            <input type="password" placeholder="รหัสผ่านใหม่" size="50">
+        </td>
     </tr>
-    </table>
+
+    <!-- วันเกิด -->
+    <tr>
+        <td colspan="2">
+            วันเกิด<br>
+            <select>
+                <option>14</option>
+            </select>
+            <select>
+                <option>ก.ย.</option>
+            </select>
+            <select>
+                <option>2020</option>
+            </select>
+        </td>
+    </tr>
+
+    <!-- เพศ -->
+    <tr>
+        <td colspan="2">เพศ</td>
+    </tr>
+    <tr>
+        <td align="center">
+            <input type="radio" name="gender"> หญิง
+        </td>
+        <td align="center">
+            <input type="radio" name="gender"> ชาย
+        </td>
+    </tr>
+
+    <!-- ข้อความเงื่อนไข -->
+    <tr>
+        <td colspan="2">
+            <font size="2" color="gray">
+                เมื่อคลิก สมัคร แสดงว่าคุณยอมรับข้อกำหนด นโยบายข้อมูล และนโยบายคุกกี้ของเรา
+                คุณอาจได้รับการแจ้งเตือนทาง SMS จากเรา และสามารถเลือกไม่รับได้ในภายหลัง
+            </font>
+        </td>
+    </tr>
+
+    <!-- ปุ่มสมัคร -->
+    <tr>
+        <td colspan="2" align="center" bgcolor="green">
+            <br>
+            <input type="submit" value="สมัคร">
+            <br><br>
+        </td>
+    </tr>
+</table>
+
 </body>
 </html>
